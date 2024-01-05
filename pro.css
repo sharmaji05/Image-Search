@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 40px;
+    /* background: linear-gradient(45deg,black,gray); */
+    background: linear-gradient(45deg,rgb(183, 20, 20),rgb(70, 193, 193));
+}
+
+header{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+header h1{
+    color: rgb(238, 233, 233);
+    background-color: black;
+    height: 65px;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    padding: 12px 24px;
+    margin-left: 200px;
+    border-radius: 40px;
+    
+}
+
+
+header form .search-container{
+    margin-top: 20px;
+    position: relative;
+}
+header form .search-container input{
+    width: 100%;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    background: rgb(184, 183, 183);
+
+}
+@media screen and (max-width:920px) {
+    header{
+        width: 80%;
+    }
+}
+header form .search-container .material-icons{
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+}
+
+.images-container{
+    margin-block: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.images-container img{
+    width: 300px;
+    height: 280px;
+
+}
+.images-container .imageDiv{
+    position: relative;
+ 
+}
+.images-container.overlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: height 0.3s ease;
+}
+
+.imageDiv:hover .overlay{
+    height: 100%;
+}
+
+.loadMoreButton{
+    border: none;
+    background-color: rgb(13, 101, 85);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px 0;
+}
+h2{
+    color: aliceblue;
+}
